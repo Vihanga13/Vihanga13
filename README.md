@@ -95,9 +95,7 @@
 <a href="https://www.python.org" target="_blank" rel="noreferrer"> 
     <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/Python-Light.svg" alt="python" width="50" height="50"/> 
 </a> 
-<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/TypeScript.svg" alt="typescript" width="50" height="50"/> 
-</a> 
+
 </p>
 
 ---
