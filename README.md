@@ -43,7 +43,7 @@
 ---
 
 <p align="center">
-    <a href="https://linkedin.com/in/navindu-sachintha" target="blank">
+    <a href="https://www.linkedin.com/in/vihanga-nilusha" target="blank">
         <img align="center" src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/LinkedIn.svg" alt="navindu-sachintha" height="50" width="50" />
     </a>
   
