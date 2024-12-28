@@ -42,12 +42,11 @@
 
 ---
 
-<h3 align="center">Connect with me:</h3>
 <p align="center">
-    <a href="https://www.linkedin.com/in/vihanga-nilusha" target="blank">
-        <img align="center" src="https://github.com/Vihanga13/skill-icons/blob/main/icons/LinkedIn.svg" alt="Vihanga13" height="50" width="50" />
+    <a href="https://linkedin.com/in/navindu-sachintha" target="blank">
+        <img align="center" src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/LinkedIn.svg" alt="navindu-sachintha" height="50" width="50" />
     </a>
-    
+  
 </p>
 
 ---
