@@ -7,7 +7,6 @@
 <tr border="none">
 <td width="50%" align="left">
   
-- 🌱 I’m currently learning **CI/CD**
 
 - 🧑‍🎓 I’m an Undergraduate at **University of Plymouth**
 
