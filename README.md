@@ -27,7 +27,7 @@
 <tr border="none">
 <td width="50%" align="center">
   
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=Vihanga13&show_icons=true&locale=en&layout=compact" alt="shamalrthnayaka" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Vihanga13&" alt="shamalrthnayaka" /></p>
   <br></br>
   <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=Vihanga13&theme=dark&hide_border=false" /> 
 </td>
