@@ -29,7 +29,7 @@
   
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Vihanga13&" alt="Vihanga13" /></p>
   <br></br>
-  <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=Vihanga13&theme=dark&hide_border=false" /> 
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Vihanga13&show_icons=true&locale=en" alt="Vihanga13" /></p>
 </td>
 <td width="50%" align="center">
 
