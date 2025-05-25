@@ -1,101 +1,141 @@
-<p align="center" ><img  src = "https://i.pinimg.com/originals/3f/7e/4e/3f7e4eff7c96e9fe4b8b4b1ff3f7bdb5.gif" width = 100px></p>
-<h1 align="center">Hi 👋, I'm Vihanga Nilusha</h1>
-<h3 align="center">Computer Science Student | Go beyond the Boundries</h3>
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=navindu-sachintha&label=Profile%20views&color=0e75b6&style=flat" alt="navindu" /> </p>
+# 👋 Hey there, I'm [Your Name]
 
-<table align="center">
-<tr border="none">
-<td width="50%" align="left">
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A9FEF7&center=true&vCenter=true&width=940&lines=Full+Stack+Developer;Open+Source+Enthusiast;Problem+Solver;Always+Learning+New+Things" alt="Typing SVG" />
+</div>
+
+<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif">
+
+### 🚀 About Me
+
+```typescript
+const developer = {
+    name: "Your Name",
+    location: "Your City, Country",
+    code: ["JavaScript", "TypeScript", "Python", "Java"],
+    askMeAbout: ["web dev", "tech", "app dev", "photography"],
+    technologies: {
+        frontEnd: {
+            js: ["React", "Next.js", "Vue"],
+            css: ["Tailwind", "Bootstrap", "Styled Components"]
+        },
+        backEnd: {
+            js: ["Node", "Express", "Fastify"],
+            python: ["Django", "Flask", "FastAPI"],
+            databases: ["MongoDB", "PostgreSQL", "Redis"]
+        },
+        devOps: ["Docker", "Kubernetes", "AWS", "GitHub Actions"],
+        tools: ["Git", "VS Code", "Figma", "Postman"]
+    },
+    currentFocus: "Full Stack Development & Cloud Architecture",
+    funFact: "I debug with console.log() and I'm not ashamed! 🐛"
+};
+```
+
+<br clear="both" />
+
+## 🛠️ Tech Stack
+
+<div align="center">
   
+### Languages
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 
-- 🧑‍🎓 I’m an Undergraduate at **University of Plymouth**
+### Frontend
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-- 📫 How to reach me **vihaax23@gmail.com**
+### Backend
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white)
 
-</td>
-<td width="50%" align="center">
-    <img align="center" alt="Coding" width="450" src="https://github.com/vihanga13/Vihanga13/blob/main/code-coding.gif">
-</td>
-</tr>
-</table>
+### Database & Cloud
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+</div>
+
+## 📊 GitHub Stats
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&langs_count=8&theme=tokyonight"/>
+</div>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=tokyonight" alt="GitHub Streak" />
+</div>
+
+## 🏆 GitHub Trophies
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=yourusername&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&row=1" />
+</div>
+
+## 📈 Activity Graph
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yourusername&theme=tokyo-night&bg_color=0d1117&color=5BCDEC&line=5BCDEC&point=00ff00&area_color=FFFFFF&hide_border=true" />
+</div>
+
+## 🎯 Current Projects
+
+<div align="center">
+
+| Project | Description | Tech Stack | Status |
+|---------|-------------|------------|---------|
+| 🚀 **Project Alpha** | Next-gen web application | React, Node.js, MongoDB | ![Active](https://img.shields.io/badge/Status-Active-brightgreen) |
+| 🎨 **Design System** | Component library for teams | TypeScript, Storybook | ![In Progress](https://img.shields.io/badge/Status-In%20Progress-yellow) |
+| 🤖 **AI Assistant** | Smart automation tool | Python, FastAPI, OpenAI | ![Planning](https://img.shields.io/badge/Status-Planning-blue) |
+
+</div>
+
+## 🌟 Featured Repositories
+
+<div align="center">
+  <a href="https://github.com/yourusername/awesome-project-1">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=yourusername&repo=awesome-project-1&theme=tokyonight" />
+  </a>
+  <a href="https://github.com/yourusername/awesome-project-2">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=yourusername&repo=awesome-project-2&theme=tokyonight" />
+  </a>
+</div>
+
+## 🤝 Connect With Me
+
+<div align="center">
+  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourhandle)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)](https://yourportfolio.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/yourserver)
+
+</div>
+
+## 💭 Random Dev Quote
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+</div>
+
+## 🎵 Spotify Playing
+<div align="center">
+  <img src="https://spotify-github-profile.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff" />
+</div>
 
 ---
 
-<h3 align="center">My Statistics:</h3>
-<p align="center">
-<table align="center">
-<tr border="none">
-<td width="50%" align="center">
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=yourusername&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
   
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Vihanga13&" alt="Vihanga13" /></p>
-  <br></br>
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Vihanga13&show_icons=true&locale=en" alt="Vihanga13" /></p>
-</td>
-<td width="50%" align="center">
-
-  <img  align="center"  src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=Vihanga13&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10"/>
+  ### Show some ❤️ by starring some of the repositories!
   
-  </td>
-</tr>
-</table>
-
----
-
-<p align="center">
-    <a href="https://www.linkedin.com/in/vihanga-nilusha" target="blank">
-        <img align="center" src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/LinkedIn.svg" alt="navindu-sachintha" height="50" width="50" />
-    </a>
-  
-</p>
-
----
-
-<h3 align="center">Languages and Tools:</h3>
-<p align="center"> 
-<a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/Bootstrap.svg" alt="bootstrap" width="50" height="50"/> 
-</a> 
-<a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/C.svg" alt="c" width="50" height="50"/> 
-</a> 
-<a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/CSS.svg" alt="css3" width="50" height="50"/> 
-</a> 
-<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/Git.svg" alt="git" width="50" height="50"/> 
-</a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/JavaScript.svg" alt="javascript" width="50" height="50"/> 
-</a>
-<a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/MySQL-Light.svg" alt="mysql" width="50" height="50"/> 
-</a> 
-<a href="https://www.php.net" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/PHP-Light.svg" alt="php" width="50" height="50"/> 
-</a> 
-<a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/TailwindCSS-Light.svg" alt="tailwind" width="50" height="50"/> 
-</a>
-<a href="https://www.figma.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/Figma-Light.svg" alt="figma" width="50" height="50"/> 
-</a> 
-<a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/MongoDB.svg" alt="mongodb" width="50" height="50"/> 
-</a> 
-<a href="https://nodejs.org" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/NodeJS-Light.svg" alt="nodejs" width="50" height="50"/> 
-</a> 
-<a href="https://postman.com" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/Postman.svg" alt="postman" width="50" height="50"/> 
-</a> 
-<a href="https://reactjs.org/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/React-Light.svg" alt="react" width="50" height="50"/> 
-</a> 
-<a href="https://www.python.org" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/navindu-sachintha/skill-icons/blob/main/icons/Python-Light.svg" alt="python" width="50" height="50"/> 
-</a> 
-
-</p>
-
----
-
+  <img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" />
+</div>
