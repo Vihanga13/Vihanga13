@@ -9,8 +9,8 @@
 <div align="center">
   <img src="https://i.pinimg.com/originals/3f/7e/4e/3f7e4eff7c96e9fe4b8b4b1ff3f7bdb5.gif" width="120px">
   <br><br>
-  <img src="https://komarev.com/ghpvc/?username=Vihanga13&label=Profile%20Views&color=brightgreen&style=for-the-badge" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/Vihanga13?label=Followers&style=for-the-badge&color=blue&labelColor=black" alt="GitHub Followers" />
+  <img src="https://komarev.com/ghpvc/?username=yourusername&label=Profile%20Views&color=brightgreen&style=for-the-badge" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/yourusername?label=Followers&style=for-the-badge&color=blue&labelColor=black" alt="GitHub Followers" />
 </div>
 
 ---
@@ -44,7 +44,7 @@ const vihanga = {
 <td width="50%" align="center">
   <img src="https://github.com/vihanga13/Vihanga13/blob/main/code-coding.gif" width="400px" alt="Coding Animation">
   <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Vihanga13&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866&text_color=FFFFFF&custom_title=Weekly%20Coding%20Stats" alt="Coding Time"/>
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=yourusername&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866&text_color=FFFFFF&custom_title=Weekly%20Coding%20Stats" alt="Coding Time"/>
 </td>
 </tr>
 </table>
@@ -90,21 +90,21 @@ const vihanga = {
   <table>
     <tr>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Vihanga13&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866&text_color=FFFFFF" alt="GitHub Stats" height="200"/>
+        <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866&text_color=FFFFFF" alt="GitHub Stats" height="200"/>
       </td>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vihanga13&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&text_color=FFFFFF&langs_count=8" alt="Top Languages" height="200"/>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&text_color=FFFFFF&langs_count=8" alt="Top Languages" height="200"/>
       </td>
     </tr>
   </table>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Vihanga13&theme=radical&hide_border=true&background=0D1117&stroke=F85D7F&ring=F8D866&fire=F85D7F&currStreakLabel=FFFFFF" alt="GitHub Streak"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=radical&hide_border=true&background=0D1117&stroke=F85D7F&ring=F8D866&fire=F85D7F&currStreakLabel=FFFFFF" alt="GitHub Streak"/>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Vihanga13&theme=react-dark&bg_color=0D1117&color=F8D866&line=F85D7F&point=FFFFFF&area=true&hide_border=true" alt="Contribution Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yourusername&theme=react-dark&bg_color=0D1117&color=F8D866&line=F85D7F&point=FFFFFF&area=true&hide_border=true" alt="Contribution Graph"/>
 </div>
 
 ---
@@ -114,7 +114,7 @@ const vihanga = {
 </div>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Vihanga13&theme=radical&no-frame=true&no-bg=false&margin-w=4&row=2&column=4" alt="GitHub Trophies"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=yourusername&theme=radical&no-frame=true&no-bg=false&margin-w=4&row=2&column=4" alt="GitHub Trophies"/>
 </div>
 
 ---
@@ -130,7 +130,7 @@ const vihanga = {
   <a href="mailto:vihaax23@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836" alt="Gmail"/>
   </a>
-  <a href="https://github.com/Vihanga13" target="_blank">
+  <a href="https://github.com/yourusername" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=100000" alt="GitHub"/>
   </a>
 </div>
