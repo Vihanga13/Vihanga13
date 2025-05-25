@@ -44,7 +44,7 @@ const vihanga = {
 <td width="50%" align="center">
   <img src="https://github.com/vihanga13/Vihanga13/blob/main/code-coding.gif" width="400px" alt="Coding Animation">
   <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=yourusername&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866&text_color=FFFFFF&custom_title=Weekly%20Coding%20Stats" alt="Coding Time"/>
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=yourusername&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=F8D866&text_color=FFFFFF&custom_title=Weekly%20Coding%20Stats" alt="Coding Time"/>
 </td>
 </tr>
 </table>
@@ -90,21 +90,21 @@ const vihanga = {
   <table>
     <tr>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Vihanga13&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866&text_color=FFFFFF" alt="GitHub Stats" height="200"/>
+        <img src="https://github-readme-stats.vercel.app/api?username=Vihanga13&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=F8D866&text_color=FFFFFF" alt="GitHub Stats" height="200"/>
       </td>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vihanga13&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&text_color=FFFFFF&langs_count=8" alt="Top Languages" height="200"/>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vihanga13&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=FFFFFF&langs_count=8" alt="Top Languages" height="200"/>
       </td>
     </tr>
   </table>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Vihanga13&theme=radical&hide_border=true&background=0D1117&stroke=F85D7F&ring=F8D866&fire=F85D7F&currStreakLabel=FFFFFF" alt="GitHub Streak"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Vihanga13&theme=radical&hide_border=true&background=0D1117&stroke=00D4FF&ring=F8D866&fire=00D4FF&currStreakLabel=FFFFFF" alt="GitHub Streak"/>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Vihanga13&theme=react-dark&bg_color=0D1117&color=F8D866&line=F85D7F&point=FFFFFF&area=true&hide_border=true" alt="Contribution Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Vihanga13&theme=react-dark&bg_color=0D1117&color=F8D866&line=00D4FF&point=FFFFFF&area=true&hide_border=true" alt="Contribution Graph"/>
 </div>
 
 ---
