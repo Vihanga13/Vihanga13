@@ -42,9 +42,11 @@ const vihanga = {
 
 </td>
 <td width="50%" align="center">
-  <img src="https://github.com/vihanga13/Vihanga13/blob/main/code-coding.gif" width="400px" alt="Coding Animation">
+  <img src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif" width="400px" alt="Coding Animation">
   <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=yourusername&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=F8D866&text_color=FFFFFF&custom_title=Weekly%20Coding%20Stats" alt="Coding Time"/>
+  <div align="center">
+    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Vihanga13&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=F8D866&text_color=FFFFFF&custom_title=Weekly%20Coding%20Stats" alt="Coding Time" onerror="this.style.display='none'"/>
+  </div>
 </td>
 </tr>
 </table>
