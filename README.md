@@ -3,10 +3,9 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&multiline=true&width=600&height=100&lines=Computer+Science+Student;🚀+Go+Beyond+The+Boundaries;💡+Full+Stack+Developer;🎯+Problem+Solver" alt="Typing Animation"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&multiline=true&width=800&height=100&lines=Computer+Science+Student;🚀+Go+Beyond+The+Boundaries;💡+Full+Stack+Developer;🎯+Problem+Solver" alt="Typing Animation"/>
 </div>
-<br></br>
-<br></br>
+
 <div align="center">
   <img src="https://i.pinimg.com/originals/3f/7e/4e/3f7e4eff7c96e9fe4b8b4b1ff3f7bdb5.gif" width="120px">
   <br><br>
