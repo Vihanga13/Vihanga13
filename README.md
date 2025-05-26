@@ -45,7 +45,9 @@ const vihanga = {
   <img src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif" width="400px" alt="Coding Animation">
   <br><br>
   <div align="center">
-    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Vihanga13&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=F8D866&text_color=FFFFFF&custom_title=Weekly%20Coding%20Stats" alt="Coding Time" onerror="this.style.display='none'"/>
+    <img src="https://img.shields.io/badge/Code-HTML%20%7C%20CSS%20%7C%20JS%20%7C%20React-blue?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Current Focus"/>
+    <br>
+    <img src="https://img.shields.io/badge/Learning-Node.js%20%7C%20Python%20%7C%20MongoDB-green?style=for-the-badge&logo=github&logoColor=white" alt="Learning"/>
   </div>
 </td>
 </tr>
