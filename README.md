@@ -214,15 +214,34 @@ const vihanga = {
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=🔥%20CONTRIBUTION%20SNAKE%20🔥&fontSize=25&fontColor=ffffff"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=⚡%20CONTRIBUTION%20METRICS%20⚡&fontSize=25&fontColor=ffffff"/>
 </div>
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Vihanga13/Vihanga13/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Vihanga13/Vihanga13/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Vihanga13/Vihanga13/output/github-contribution-grid-snake-dark.svg">
-  </picture>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Vihanga13&theme=github_dark" alt="Contribution Details" width="600"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Vihanga13&theme=github_dark" alt="Repos per Language" width="300"/>
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Vihanga13&theme=github_dark" alt="Most Commit Language" width="300"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Vihanga13&theme=github_dark" alt="Stats" width="300"/>
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Vihanga13&theme=github_dark&utcOffset=5.5" alt="Productive Time" width="300"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="center">
+  <h3 style="color: white;">🔥 Code & Commit Heatmap 🔥</h3>
+  <img src="https://ghchart.rshah.org/ffffff/Vihanga13" alt="GitHub Contribution Chart" width="800"/>
 </div>
 
 ---
