@@ -143,7 +143,7 @@ const vihanga = {
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Vihanga13&theme=dark&hide_border=true&background=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakLabel=ffffff" alt="GitHub Streak"/>
+  <img src="https://streak-stats.demolab.com/?user=Vihanga13&theme=dark&hide_border=true&background=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakLabel=ffffff" alt="GitHub Streak"/>
 </div>
 
 <div align="center">
