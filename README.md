@@ -16,149 +16,7 @@
 
 ---
 
-<table align="center" style="border: none; background-color: #000000;">
-<tr>
-<td width="50%" valign="top">
-
-## 🌈 About Me
-
-```javascript
-const vihanga = {
-    name: "Vihanga Nilusha",
-    education: "University of Plymouth 🎓",
-    status: "Computer Science Student",
-    specializations: [
-        "Full Stack Development 🚀",
-        "UI/UX Design 🎨", 
-        "Mobile App Development 📱"
-    ],
-    currentlyLearning: [
-        "React Native", 
-        "Flutter", 
-        "Advanced React", 
-        "Node.js"
-    ],
-    interests: [
-        "Web Development", 
-        "Mobile Development", 
-        "UI/UX Design", 
-        "Open Source"
-    ],
-    motto: "Go Beyond The Boundaries 🚀",
-    contact: "vihaax23@gmail.com",
-    funFact: "I create beautiful, functional experiences across all platforms! 💻📱🎨"
-};
-```
-
-### 🎯 Current Focus
-- 🌱 Building **full-stack** web applications
-- 🎨 Creating intuitive **UI/UX** designs
-- 📱 Developing **mobile applications**
-- 🤝 Contributing to open source projects
-- 🚀 Learning cross-platform development
-
-</td>
-<td width="50%" align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400px" alt="Coding Animation">
-  <br><br>
-  <div align="center">
-    <img src="https://img.shields.io/badge/Full_Stack-React%20%7C%20Node.js%20%7C%20MongoDB-white?style=for-the-badge&logo=react&logoColor=black&labelColor=black" alt="Full Stack"/>
-    <br>
-    <img src="https://img.shields.io/badge/UI%2FUX-Figma%20%7C%20Adobe_XD%20%7C%20Design_Systems-white?style=for-the-badge&logo=figma&logoColor=black&labelColor=black" alt="UI/UX"/>
-    <br>
-    <img src="https://img.shields.io/badge/Mobile-React_Native%20%7C%20Flutter%20%7C%20Cross_Platform-white?style=for-the-badge&logo=flutter&logoColor=black&labelColor=black" alt="Mobile"/>
-  </div>
-</td>
-</tr>
-</table>
-
----
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=💻%20TECH%20STACK%20💻&fontSize=25&fontColor=ffffff"/>
-</div>
-
-<div align="center">
-
-### 🎨 Frontend & UI/UX
-![HTML5](https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-000000?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-000000?style=for-the-badge&logo=bootstrap&logoColor=white)
-![Sass](https://img.shields.io/badge/Sass-000000?style=for-the-badge&logo=sass&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-000000?style=for-the-badge&logo=figma&logoColor=white)
-![Adobe XD](https://img.shields.io/badge/Adobe%20XD-000000?style=for-the-badge&logo=Adobe%20XD&logoColor=white)
-
-### ⚡ Backend & Database
-![Node.js](https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-000000?style=for-the-badge&logo=php&logoColor=white)
-![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-000000?style=for-the-badge&logo=openjdk&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-000000?style=for-the-badge&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-000000?style=for-the-badge&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=postgresql&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-000000?style=for-the-badge&logo=Firebase&logoColor=white)
-
-### 📱 Mobile Development
-![React Native](https://img.shields.io/badge/React_Native-000000?style=for-the-badge&logo=react&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-000000?style=for-the-badge&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-000000?style=for-the-badge&logo=dart&logoColor=white)
-![Android](https://img.shields.io/badge/Android-000000?style=for-the-badge&logo=android&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
-![Expo](https://img.shields.io/badge/Expo-000000?style=for-the-badge&logo=expo&logoColor=white)
-
-### 🛠️ Tools & DevOps
-![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-000000?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-000000?style=for-the-badge&logo=postman&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-000000?style=for-the-badge&logo=netlify&logoColor=white)
-
-</div>
-
----
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=📊%20GITHUB%20ANALYTICS%20📊&fontSize=25&fontColor=ffffff"/>
-</div>
-
-<div align="center">
-  <table>
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Vihanga13&show_icons=true&theme=dark&hide_border=true&bg_color=000000&title_color=ffffff&icon_color=ffffff&text_color=ffffff" alt="GitHub Stats" width="400"/>
-      </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vihanga13&layout=compact&theme=dark&hide_border=true&bg_color=000000&title_color=ffffff&text_color=ffffff&langs_count=8" alt="Top Languages" width="400"/>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=Vihanga13&theme=dark&hide_border=true&background=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakLabel=ffffff" alt="GitHub Streak"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Vihanga13&theme=github-compact&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" alt="Contribution Graph"/>
-</div>
-
----
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=🏆%20ACHIEVEMENTS%20🏆&fontSize=25&fontColor=ffffff"/>
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Vihanga13&theme=onedark&no-frame=true&no-bg=false&margin-w=4&row=2&column=4" alt="GitHub Trophies"/>
-</div>
+<!-- your About Me, Tech Stack, GitHub Analytics, Achievements etc. remain the same -->
 
 ---
 
@@ -170,14 +28,17 @@ const vihanga = {
 
 | 🚀 Project | 📝 Description | 🛠️ Tech Stack | 📊 Status |
 |------------|----------------|---------------|----------|
-| **Full-Stack E-Commerce** | Complete shopping platform with admin panel | `React` `Node.js` `MongoDB` `Stripe` | ![In Progress](https://img.shields.io/badge/Status-In%20Progress-white?style=flat-square&labelColor=black) |
-| **Mobile Task Manager** | Cross-platform productivity app with sync | `React Native` `Firebase` `Redux` | ![Active](https://img.shields.io/badge/Status-Active-white?style=flat-square&labelColor=black) |
-| **UI/UX Portfolio** | Design showcase with interactive prototypes | `Figma` `Adobe XD` `Framer` | ![Planning](https://img.shields.io/badge/Status-Planning-white?style=flat-square&labelColor=black) |
-| **Restaurant App** | Full-stack dining experience with ordering | `Flutter` `Node.js` `MySQL` `PayPal` | ![Active](https://img.shields.io/badge/Status-Active-white?style=flat-square&labelColor=black) |
+| **E-Commerce Website** | Online store with cart, checkout & admin | `WordPress` `WooCommerce` `Elementor` | ![Completed](https://img.shields.io/badge/Status-Completed-white?style=flat-square&labelColor=black) |
+| **PHP Login System** | Secure user login & session handling | `PHP` `MySQL` `HTML/CSS` `XAMPP` | ![Completed](https://img.shields.io/badge/Status-Completed-white?style=flat-square&labelColor=black) |
+| **Portfolio Website** | Responsive portfolio with animations | `HTML` `CSS` `JavaScript` | ![Active](https://img.shields.io/badge/Status-Active-white?style=flat-square&labelColor=black) |
+| **Mobile Task Manager** | Productivity app for task tracking | `React Native` `Firebase` | ![In Progress](https://img.shields.io/badge/Status-In%20Progress-white?style=flat-square&labelColor=black) |
+| **UI/UX Showcase** | Interactive designs & prototypes | `Figma` `Adobe XD` `Framer` | ![Planning](https://img.shields.io/badge/Status-Planning-white?style=flat-square&labelColor=black) |
 
 </div>
 
 ---
+
+<!-- your Connect, Quotes, Contribution Metrics, and Footer remain the same -->
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=🤝%20LET'S%20CONNECT%20🤝&fontSize=25&fontColor=ffffff"/>
