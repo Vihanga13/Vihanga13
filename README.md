@@ -1,258 +1,761 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=000000&customColorList=0,1,2,3,4,5&height=180&section=header&text=Hi%20👋%20I'm%20Vihanga%20Nilusha&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=32"/>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vihanga Nilusha - GitHub Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=ffffff&center=true&vCenter=true&multiline=true&width=800&height=120&lines=Computer+Science+Student;🚀+Full+Stack+Developer;🎨+UI%2FUX+Designer;📱+Mobile+App+Developer;💡+Go+Beyond+The+Boundaries" alt="Typing Animation"/>
-</div>
-<br></br>
+        body {
+            font-family: 'Fira Code', 'Courier New', monospace;
+            background: linear-gradient(135deg, #0a0e27 0%, #16213e 50%, #0f3460 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-<div align="center">
-  <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="120px" alt="Coding GIF">
-  <br><br>
-  <img src="https://komarev.com/ghpvc/?username=Vihanga13&label=Profile%20Views&color=white&style=for-the-badge&labelColor=black" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/Vihanga13?label=Followers&style=for-the-badge&color=white&labelColor=black" alt="GitHub Followers" />
-</div>
+        /* Animated background */
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
 
----
+        /* Floating particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
 
-<table align="center" style="border: none; background-color: #000000;">
-<tr>
-<td width="50%" valign="top">
+        .particle {
+            position: absolute;
+            background: radial-gradient(circle, rgba(255,255,255,0.8), rgba(255,255,255,0));
+            border-radius: 50%;
+            animation: float linear infinite;
+        }
 
-## 🌈 About Me
+        @keyframes float {
+            0% {
+                opacity: 0;
+                transform: translateY(100vh) translateX(0);
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100vh) translateX(100px);
+            }
+        }
 
-```javascript
-const vihanga = {
-    name: "Vihanga Nilusha",
-    education: "University of Plymouth 🎓",
-    status: "Computer Science Student",
-    specializations: [
-        "Full Stack Development 🚀",
-        "UI/UX Design 🎨", 
-        "Mobile App Development 📱"
-    ],
-    currentlyLearning: [
-        "React Native", 
-        "Flutter", 
-        "Advanced React", 
-        "Node.js"
-    ],
-    interests: [
-        "Web Development", 
-        "Mobile Development", 
-        "UI/UX Design", 
-        "Open Source"
-    ],
-    motto: "Go Beyond The Boundaries 🚀",
-    contact: "vihaax23@gmail.com",
-    funFact: "I create beautiful, functional experiences across all platforms! 💻📱🎨"
-};
-```
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 1;
+        }
 
-### 🎯 Current Focus
-- 🌱 Building **full-stack** web applications
-- 🎨 Creating intuitive **UI/UX** designs
-- 📱 Developing **mobile applications**
-- 🤝 Contributing to open source projects
-- 🚀 Learning cross-platform development
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: slideDown 0.8s ease-out;
+        }
 
-</td>
-<td width="50%" align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400px" alt="Coding Animation">
-  <br><br>
-  <div align="center">
-    <img src="https://img.shields.io/badge/Full_Stack-React%20%7C%20Node.js%20%7C%20MongoDB-white?style=for-the-badge&logo=react&logoColor=black&labelColor=black" alt="Full Stack"/>
-    <br>
-    <img src="https://img.shields.io/badge/UI%2FUX-Figma%20%7C%20Adobe_XD%20%7C%20Design_Systems-white?style=for-the-badge&logo=figma&logoColor=black&labelColor=black" alt="UI/UX"/>
-    <br>
-    <img src="https://img.shields.io/badge/Mobile-React_Native%20%7C%20Flutter%20%7C%20Cross_Platform-white?style=for-the-badge&logo=flutter&logoColor=black&labelColor=black" alt="Mobile"/>
-  </div>
-</td>
-</tr>
-</table>
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
----
+        .header h1 {
+            font-size: 4em;
+            background: linear-gradient(45deg, #00d4ff, #0099ff, #00ff88, #00d4ff);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 3s ease infinite;
+            margin-bottom: 20px;
+            text-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+        }
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=💻%20TECH%20STACK%20💻&fontSize=25&fontColor=ffffff"/>
-</div>
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
-<div align="center">
+        .typing-text {
+            font-size: 1.5em;
+            color: #00ff88;
+            min-height: 40px;
+            animation: typewriter 3s steps(40, end) infinite;
+        }
 
-### 🎨 Frontend & UI/UX
-![HTML5](https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-000000?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-000000?style=for-the-badge&logo=bootstrap&logoColor=white)
-![Sass](https://img.shields.io/badge/Sass-000000?style=for-the-badge&logo=sass&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-000000?style=for-the-badge&logo=figma&logoColor=white)
-![Adobe XD](https://img.shields.io/badge/Adobe%20XD-000000?style=for-the-badge&logo=Adobe%20XD&logoColor=white)
+        @keyframes typewriter {
+            0%, 100% { width: 0; }
+            50% { width: 100%; }
+        }
 
-### ⚡ Backend & Database
-![Node.js](https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-000000?style=for-the-badge&logo=php&logoColor=white)
-![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-000000?style=for-the-badge&logo=openjdk&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-000000?style=for-the-badge&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-000000?style=for-the-badge&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=postgresql&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-000000?style=for-the-badge&logo=Firebase&logoColor=white)
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
 
-### 📱 Mobile Development
-![React Native](https://img.shields.io/badge/React_Native-000000?style=for-the-badge&logo=react&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-000000?style=for-the-badge&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-000000?style=for-the-badge&logo=dart&logoColor=white)
-![Android](https://img.shields.io/badge/Android-000000?style=for-the-badge&logo=android&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
-![Expo](https://img.shields.io/badge/Expo-000000?style=for-the-badge&logo=expo&logoColor=white)
+        .stat-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px 30px;
+            border-radius: 10px;
+            border: 2px solid rgba(0, 212, 255, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
 
-### 🛠️ Tools & DevOps
-![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-000000?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-000000?style=for-the-badge&logo=postman&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-000000?style=for-the-badge&logo=netlify&logoColor=white)
+        .stat-item:hover {
+            background: rgba(0, 212, 255, 0.1);
+            border-color: rgba(0, 212, 255, 0.8);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+        }
 
-</div>
+        .stat-item strong {
+            color: #00d4ff;
+            font-size: 1.3em;
+        }
 
----
+        /* Section Headers */
+        .section-header {
+            font-size: 2em;
+            margin: 50px 0 30px 0;
+            color: #00ff88;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: fadeInLeft 0.6s ease;
+        }
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=📊%20GITHUB%20ANALYTICS%20📊&fontSize=25&fontColor=ffffff"/>
-</div>
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
-<div align="center">
-  <table>
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Vihanga13&show_icons=true&theme=dark&hide_border=true&bg_color=000000&title_color=ffffff&icon_color=ffffff&text_color=ffffff" alt="GitHub Stats" width="400"/>
-      </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vihanga13&layout=compact&theme=dark&hide_border=true&bg_color=000000&title_color=ffffff&text_color=ffffff&langs_count=8" alt="Top Languages" width="400"/>
-      </td>
-    </tr>
-  </table>
-</div>
+        .section-header::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: linear-gradient(90deg, #00ff88, transparent);
+        }
 
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=Vihanga13&theme=dark&hide_border=true&background=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakLabel=ffffff" alt="GitHub Streak"/>
-</div>
+        /* About Me Section */
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+            align-items: center;
+        }
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Vihanga13&theme=github-compact&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" alt="Contribution Graph"/>
-</div>
+        .code-block {
+            background: rgba(0, 0, 0, 0.4);
+            border-left: 4px solid #00d4ff;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            overflow-x: auto;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
 
----
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=🏆%20ACHIEVEMENTS%20🏆&fontSize=25&fontColor=ffffff"/>
-</div>
+        .code-block code {
+            color: #00ff88;
+        }
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Vihanga13&theme=onedark&no-frame=true&no-bg=false&margin-w=4&row=2&column=4" alt="GitHub Trophies"/>
-</div>
+        .about-text {
+            animation: fadeInUp 0.8s ease 0.3s both;
+        }
 
----
+        .about-text h3 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=🎯%20CURRENT%20PROJECTS%20🎯&fontSize=25&fontColor=ffffff"/>
-</div>
+        .about-text ul {
+            list-style: none;
+        }
 
-<div align="center">
+        .about-text li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-| 🚀 Project | 📝 Description | 🛠️ Tech Stack | 📊 Status |
-|------------|----------------|---------------|----------|
-| **Full-Stack E-Commerce** | Complete shopping platform with admin panel | `React` `Node.js` `MongoDB` `Stripe` | ![In Progress](https://img.shields.io/badge/Status-In%20Progress-white?style=flat-square&labelColor=black) |
-| **Mobile Task Manager** | Cross-platform productivity app with sync | `React Native` `Firebase` `Redux` | ![Active](https://img.shields.io/badge/Status-Active-white?style=flat-square&labelColor=black) |
-| **UI/UX Portfolio** | Design showcase with interactive prototypes | `Figma` `Adobe XD` `Framer` | ![Planning](https://img.shields.io/badge/Status-Planning-white?style=flat-square&labelColor=black) |
-| **Restaurant App** | Full-stack dining experience with ordering | `Flutter` `Node.js` `MySQL` `PayPal` | ![Active](https://img.shields.io/badge/Status-Active-white?style=flat-square&labelColor=black) |
+        .about-text li::before {
+            content: '▸';
+            color: #00ff88;
+            font-weight: bold;
+        }
 
-</div>
+        /* Tech Stack */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
 
----
+        .tech-category {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            animation: scaleIn 0.6s ease;
+        }
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=🤝%20LET'S%20CONNECT%20🤝&fontSize=25&fontColor=ffffff"/>
-</div>
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
-<div align="center">
-  <a href="https://www.linkedin.com/in/vihanga-nilusha" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  &nbsp;&nbsp;
-  <a href="mailto:vihaax23@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/Vihanga13" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://discord.gg/yourdiscord" target="_blank">
-    <img src="https://img.shields.io/badge/Discord-000000?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/>
-  </a>
-</div>
+        .tech-category h4 {
+            color: #00ff88;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
 
----
+        .tech-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=💡%20RANDOM%20DEV%20QUOTE%20💡&fontSize=25&fontColor=ffffff"/>
-</div>
+        .badge {
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid rgba(0, 212, 255, 0.4);
+            color: #00d4ff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
 
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&border=true&bg_color=000000&text_color=ffffff" alt="Random Dev Quote"/>
-</div>
+        .badge:hover {
+            background: rgba(0, 212, 255, 0.2);
+            border-color: rgba(0, 212, 255, 0.8);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 212, 255, 0.2);
+        }
 
----
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=⚡%20CONTRIBUTION%20METRICS%20⚡&fontSize=25&fontColor=ffffff"/>
-</div>
+        .project-card {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(0, 255, 136, 0.05));
+            border: 2px solid rgba(0, 212, 255, 0.2);
+            padding: 25px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease both;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Vihanga13&theme=github_dark" alt="Contribution Details" width="600"/>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Vihanga13&theme=github_dark" alt="Repos per Language" width="300"/>
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Vihanga13&theme=github_dark" alt="Most Commit Language" width="300"/>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Vihanga13&theme=github_dark" alt="Stats" width="300"/>
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Vihanga13&theme=github_dark&utcOffset=5.5" alt="Productive Time" width="300"/>
-      </td>
-    </tr>
-  </table>
-</div>
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s;
+        }
 
-<div align="center">
-  <h3 style="color: white;">🔥 Code & Commit Heatmap 🔥</h3>
-  <img src="https://ghchart.rshah.org/ffffff/Vihanga13" alt="GitHub Contribution Chart" width="800"/>
-</div>
+        .project-card:hover::before {
+            left: 100%;
+        }
 
----
+        .project-card:hover {
+            border-color: rgba(0, 212, 255, 0.6);
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 255, 136, 0.1));
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+        }
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=000000&customColorList=0,1,2,3,4,5&height=120&section=footer&text=Thank%20You%20For%20Visiting!&fontSize=24&fontColor=ffffff&animation=twinkling&fontAlignY=75"/>
-</div>
+        .project-card h3 {
+            color: #00ff88;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
 
-<div align="center">
-  <h3 style="color: white;">⭐ Don't forget to star my repositories if you find them interesting! ⭐</h3>
-  <br>
-  <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="Built with Love">
-  <img src="https://forthebadge.com/images/badges/powered-by-coffee.svg" alt="Powered by Coffee">
-</div>
+        .project-card p {
+            color: #b0b0b0;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .tech-tag {
+            background: rgba(0, 255, 136, 0.1);
+            color: #00ff88;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            border: 1px solid rgba(0, 255, 136, 0.3);
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        .status-active {
+            background: rgba(0, 255, 136, 0.2);
+            color: #00ff88;
+            border: 1px solid rgba(0, 255, 136, 0.5);
+        }
+
+        .status-progress {
+            background: rgba(0, 212, 255, 0.2);
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.5);
+        }
+
+        .status-planning {
+            background: rgba(255, 200, 0, 0.2);
+            color: #ffc800;
+            border: 1px solid rgba(255, 200, 0, 0.5);
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .skill-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease both;
+        }
+
+        .skill-box:hover {
+            background: rgba(0, 255, 136, 0.05);
+            border-color: rgba(0, 255, 136, 0.6);
+            transform: translateY(-5px);
+        }
+
+        .skill-box h4 {
+            color: #00d4ff;
+            margin-bottom: 12px;
+        }
+
+        .skill-box p {
+            color: #a0a0a0;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        /* Connect Section */
+        .connect-section {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .social-btn {
+            background: rgba(0, 212, 255, 0.1);
+            border: 2px solid rgba(0, 212, 255, 0.4);
+            color: #00d4ff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .social-btn:hover {
+            background: rgba(0, 212, 255, 0.2);
+            border-color: rgba(0, 212, 255, 0.8);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(0, 212, 255, 0.2);
+            animation: fadeInUp 0.8s ease 0.5s both;
+        }
+
+        .footer p {
+            color: #808080;
+            margin: 10px 0;
+        }
+
+        .footer strong {
+            color: #00ff88;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+
+            .about-section {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                flex-direction: column;
+            }
+
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>👋 Hi, I'm Vihanga Nilusha</h1>
+            <div class="typing-text">Full Stack Developer | UI/UX Designer | Mobile Developer</div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <strong>🎓</strong> Computer Science Student
+                </div>
+                <div class="stat-item">
+                    <strong>🚀</strong> University of Plymouth
+                </div>
+                <div class="stat-item">
+                    <strong>💡</strong> Go Beyond The Boundaries
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me -->
+        <div class="section-header">📋 About Me</div>
+        <div class="about-section">
+            <div class="code-block">
+                <code>
+const vihanga = {<br>
+&nbsp;&nbsp;name: "Vihanga Nilusha",<br>
+&nbsp;&nbsp;education: "University of Plymouth 🎓",<br>
+&nbsp;&nbsp;specializations: [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"Full Stack Development 🚀",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"UI/UX Design 🎨",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"Mobile App Development 📱"<br>
+&nbsp;&nbsp;],<br>
+&nbsp;&nbsp;currentlyLearning: [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"React Native", "Flutter", "Advanced React"<br>
+&nbsp;&nbsp;],<br>
+&nbsp;&nbsp;motto: "Go Beyond The Boundaries 🚀"<br>
+}
+                </code>
+            </div>
+            <div class="about-text">
+                <h3>🎯 Current Focus</h3>
+                <ul>
+                    <li>Building full-stack web applications with modern frameworks</li>
+                    <li>Creating intuitive UI/UX designs with Figma & Adobe XD</li>
+                    <li>Developing cross-platform mobile applications</li>
+                    <li>Contributing to open source projects</li>
+                    <li>Learning advanced React patterns and Node.js best practices</li>
+                    <li>Creating beautiful, functional experiences across all platforms! 💻📱🎨</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="section-header">💻 Tech Stack</div>
+        <div class="tech-grid">
+            <div class="tech-category">
+                <h4>🎨 Frontend & UI/UX</h4>
+                <div class="tech-badges">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">TypeScript</span>
+                    <span class="badge">React</span>
+                    <span class="badge">Next.js</span>
+                    <span class="badge">TailwindCSS</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">Sass</span>
+                    <span class="badge">Figma</span>
+                    <span class="badge">Adobe XD</span>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h4>⚡ Backend & Database</h4>
+                <div class="tech-badges">
+                    <span class="badge">Node.js</span>
+                    <span class="badge">Express.js</span>
+                    <span class="badge">Python</span>
+                    <span class="badge">PHP</span>
+                    <span class="badge">Java</span>
+                    <span class="badge">MongoDB</span>
+                    <span class="badge">MySQL</span>
+                    <span class="badge">PostgreSQL</span>
+                    <span class="badge">Firebase</span>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h4>📱 Mobile Development</h4>
+                <div class="tech-badges">
+                    <span class="badge">React Native</span>
+                    <span class="badge">Flutter</span>
+                    <span class="badge">Dart</span>
+                    <span class="badge">Android</span>
+                    <span class="badge">iOS</span>
+                    <span class="badge">Expo</span>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h4>🛠️ Tools & DevOps</h4>
+                <div class="tech-badges">
+                    <span class="badge">Git</span>
+                    <span class="badge">GitHub</span>
+                    <span class="badge">VS Code</span>
+                    <span class="badge">Docker</span>
+                    <span class="badge">Vercel</span>
+                    <span class="badge">Netlify</span>
+                    <span class="badge">Postman</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section-header">🎯 Featured Projects</div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>🛒 Full-Stack E-Commerce</h3>
+                <p>Complete shopping platform with admin dashboard and payment integration</p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Stripe</span>
+                </div>
+                <span class="status-badge status-progress">🔄 In Progress</span>
+            </div>
+
+            <div class="project-card">
+                <h3>✅ Mobile Task Manager</h3>
+                <p>Cross-platform productivity app with real-time synchronization and offline support</p>
+                <div class="project-tech">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Redux</span>
+                </div>
+                <span class="status-badge status-active">✅ Active</span>
+            </div>
+
+            <div class="project-card">
+                <h3>🍽️ Restaurant App</h3>
+                <p>Full-featured dining platform with menu browsing, ordering, and payment integration</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">PayPal</span>
+                </div>
+                <span class="status-badge status-active">✅ Active</span>
+            </div>
+
+            <div class="project-card">
+                <h3>🎨 UI/UX Portfolio</h3>
+                <p>Comprehensive design showcase with interactive prototypes and design systems</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Figma</span>
+                    <span class="tech-tag">Adobe XD</span>
+                    <span class="tech-tag">Framer</span>
+                </div>
+                <span class="status-badge status-planning">📋 Planning</span>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="section-header">🌟 What I'm Good At</div>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h4>🌐 Web Development</h4>
+                <p>Building responsive, scalable applications with modern frameworks and best practices. Expertise in React, Next.js, and full-stack architectures.</p>
+            </div>
+            <div class="skill-box">
+                <h4>📱 Mobile Development</h4>
+                <p>Creating seamless cross-platform experiences for iOS and Android using React Native and Flutter with native-like performance.</p>
+            </div>
+            <div class="skill-box">
+                <h4>🎨 UI/UX Design</h4>
+                <p>Designing intuitive interfaces that balance aesthetics with functionality. Proficient in Figma, Adobe XD, and design systems.</p>
+            </div>
+            <div class="skill-box">
+                <h4>⚙️ Full-Stack Solutions</h4>
+                <p>End-to-end development from database design to frontend implementation with scalable backend architectures.</p>
+            </div>
+        </div>
+
+        <!-- Connect -->
+        <div class="connect-section">
+            <div class="section-header">🤝 Let's Connect</div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/vihanga-nilusha" class="social-btn">💼 LinkedIn</a>
+                <a href="https://github.com/Vihanga13" class="social-btn">🐙 GitHub</a>
+                <a href="mailto:vihaax23@gmail.com" class="social-btn">📧 Email</a>
+                <a href="https://discord.gg/yourdiscord" class="social-btn">💬 Discord</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>⭐ <strong>Don't forget to star my repositories if you find them interesting!</strong> ⭐</p>
+            <p>Made with ❤️ and ☕ by Vihanga Nilusha</p>
+            <p style="margin-top: 20px; font-size: 0.9em;">Go Beyond The Boundaries 🚀</p>
+        </div>
+    </div>
+
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                const size = Math.random() * 4 + 2;
+                const duration = Math.random() * 20 + 10;
+                const delay = Math.random() * 5;
+                const xOffset = Math.random() * 200 - 100;
+
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animation = `float ${duration}s linear ${delay}s infinite`;
+                particle.style.filter = `blur(${Math.random() * 0.5}px)`;
+
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Initialize particles on load
+        window.addEventListener('load', createParticles);
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = entry.target.style.animation;
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section-header, .tech-category, .project-card, .skill-box').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Interactive badge hover effect
+        document.querySelectorAll('.badge').forEach(badge => {
+            badge.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.1) rotate(5deg)';
+            });
+            badge.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) rotate(0deg)';
+            });
+        });
+    </script>
+</body>
+</html>
