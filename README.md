@@ -1,641 +1,258 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vihanga Nilusha - GitHub Profile</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
-            background: #0d1117;
-            color: #c9d1d9;
-            line-height: 1.6;
-            background-image: 
-                linear-gradient(90deg, transparent 24%, rgba(0, 212, 255, 0.05) 25%, rgba(0, 212, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 212, 255, 0.05) 75%, rgba(0, 212, 255, 0.05) 76%, transparent 77%, transparent),
-                linear-gradient(0deg, transparent 24%, rgba(0, 212, 255, 0.05) 25%, rgba(0, 212, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 212, 255, 0.05) 75%, rgba(0, 212, 255, 0.05) 76%, transparent 77%, transparent);
-            background-size: 50px 50px;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-
-        /* Terminal-like styling */
-        .terminal {
-            max-width: 100%;
-            margin: 0;
-            background: #0d1117;
-            position: relative;
-        }
-
-        .terminal-header {
-            background: #161b22;
-            border-bottom: 1px solid #30363d;
-            padding: 12px 16px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            animation: slideDown 0.6s ease-out;
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .terminal-buttons {
-            display: flex;
-            gap: 8px;
-        }
-
-        .terminal-btn {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .btn-red { background: #ff5f56; }
-        .btn-yellow { background: #ffbd2e; }
-        .btn-green { background: #27c93f; }
-
-        .terminal-btn:hover {
-            transform: scale(1.2);
-        }
-
-        .terminal-title {
-            color: #8b949e;
-            font-size: 13px;
-            flex: 1;
-            text-align: center;
-        }
-
-        .terminal-content {
-            padding: 20px 30px;
-            animation: fadeIn 0.8s ease-out 0.3s both;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #0d1117;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #30363d;
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #484f58;
-        }
-
-        /* Content Styling */
-        .line {
-            display: flex;
-            align-items: center;
-            padding: 2px 0;
-            min-height: 24px;
-            animation: typeWriter 0.05s ease-out forwards;
-        }
-
-        @keyframes typeWriter {
-            from {
-                opacity: 0;
-                transform: translateX(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .line-number {
-            display: inline-block;
-            width: 40px;
-            text-align: right;
-            color: #6e7681;
-            margin-right: 20px;
-            user-select: none;
-            font-size: 12px;
-        }
-
-        .line-content {
-            flex: 1;
-            font-size: 13px;
-            letter-spacing: 0.5px;
-        }
-
-        /* Syntax Highlighting */
-        .keyword {
-            color: #ff7b72;
-        }
-
-        .string {
-            color: #a5d6ff;
-        }
-
-        .function {
-            color: #d2a8ff;
-        }
-
-        .property {
-            color: #79c0ff;
-        }
-
-        .comment {
-            color: #8b949e;
-            font-style: italic;
-        }
-
-        .number {
-            color: #79c0ff;
-        }
-
-        .operator {
-            color: #ff7b72;
-        }
-
-        .name {
-            color: #c9d1d9;
-        }
-
-        .emoji {
-            font-style: normal;
-            margin: 0 2px;
-        }
-
-        .section-divider {
-            color: #30363d;
-            margin: 10px 0;
-        }
-
-        h2 {
-            color: #58a6ff;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 16px;
-            font-weight: bold;
-            animation: slideInLeft 0.4s ease-out backwards;
-        }
-
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .indent {
-            margin-left: 20px;
-        }
-
-        .indent-2 {
-            margin-left: 40px;
-        }
-
-        .indent-3 {
-            margin-left: 60px;
-        }
-
-        .highlight {
-            background: rgba(88, 166, 255, 0.15);
-            border-left: 2px solid #58a6ff;
-            padding-left: 10px;
-        }
-
-        .table-row {
-            display: grid;
-            grid-template-columns: 2fr 3fr 2fr 1fr;
-            gap: 20px;
-            padding: 8px 0;
-            border-bottom: 1px solid #21262d;
-        }
-
-        .table-header {
-            color: #58a6ff;
-            font-weight: bold;
-            border-bottom: 2px solid #30363d;
-            padding-bottom: 10px;
-        }
-
-        .status-badge {
-            display: inline-block;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 11px;
-            font-weight: bold;
-        }
-
-        .status-active {
-            background: rgba(3, 102, 214, 0.3);
-            color: #58a6ff;
-        }
-
-        .status-progress {
-            background: rgba(183, 119, 31, 0.3);
-            color: #d29922;
-        }
-
-        .status-planning {
-            background: rgba(98, 61, 143, 0.3);
-            color: #bc8cdb;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .terminal-content {
-                padding: 15px 20px;
-            }
-
-            .line-number {
-                width: 30px;
-                margin-right: 15px;
-                font-size: 11px;
-            }
-
-            .line-content {
-                font-size: 12px;
-            }
-
-            .table-row {
-                grid-template-columns: 1fr;
-                gap: 5px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="terminal">
-        <div class="terminal-header">
-            <div class="terminal-buttons">
-                <div class="terminal-btn btn-red"></div>
-                <div class="terminal-btn btn-yellow"></div>
-                <div class="terminal-btn btn-green"></div>
-            </div>
-            <div class="terminal-title">vihanga@github ~ README.md</div>
-            <div style="width: 60px;"></div>
-        </div>
-
-        <div class="terminal-content">
-            <div class="line" style="animation-delay: 0.05s">
-                <span class="line-number">1</span>
-                <span class="line-content"><span class="comment"># 👋 Hi, I'm Vihanga Nilusha</span></span>
-            </div>
-
-            <div class="line" style="animation-delay: 0.1s">
-                <span class="line-number">2</span>
-                <span class="line-content"></span>
-            </div>
-
-            <div class="line" style="animation-delay: 0.15s">
-                <span class="line-number">3</span>
-                <span class="line-content"><span class="string">**Full Stack Developer | UI/UX Designer | Mobile Developer**</span></span>
-            </div>
-
-            <div class="line" style="animation-delay: 0.2s">
-                <span class="line-number">4</span>
-                <span class="line-content"></span>
-            </div>
-
-            <div class="line" style="animation-delay: 0.25s">
-                <span class="line-number">5</span>
-                <span class="line-content">Computer Science student at <span class="string">University of Plymouth</span>, passionate about</span>
-            </div>
-
-            <div class="line" style="animation-delay: 0.3s">
-                <span class="line-number">6</span>
-                <span class="line-content">building beautiful and functional digital experiences.</span>
-            </div>
-
-            <div class="line" style="animation-delay: 0.35s">
-                <span class="line-number">7</span>
-                <span class="line-content"></span>
-            </div>
-
-            <div class="line" style="animation-delay: 0.4s">
-                <span class="line-number">8</span>
-                <span class="line-content"><span class="keyword">const</span> <span class="property">vihanga</span> = {</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 0.45s">
-                <span class="line-number">9</span>
-                <span class="line-content"><span class="property">name</span>: <span class="string">"Vihanga Nilusha"</span>,</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 0.5s">
-                <span class="line-number">10</span>
-                <span class="line-content"><span class="property">education</span>: <span class="string">"University of Plymouth"</span> 🎓,</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 0.55s">
-                <span class="line-number">11</span>
-                <span class="line-content"><span class="property">email</span>: <span class="string">"vihaax23@gmail.com"</span>,</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 0.6s">
-                <span class="line-number">12</span>
-                <span class="line-content"><span class="property">specializations</span>: [</span>
-            </div>
-
-            <div class="line indent-2" style="animation-delay: 0.65s">
-                <span class="line-number">13</span>
-                <span class="line-content"><span class="string">"Full Stack Development"</span> 🚀,</span>
-            </div>
-
-            <div class="line indent-2" style="animation-delay: 0.7s">
-                <span class="line-number">14</span>
-                <span class="line-content"><span class="string">"UI/UX Design"</span> 🎨,</span>
-            </div>
-
-            <div class="line indent-2" style="animation-delay: 0.75s">
-                <span class="line-number">15</span>
-                <span class="line-content"><span class="string">"Mobile App Development"</span> 📱</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 0.8s">
-                <span class="line-number">16</span>
-                <span class="line-content">],</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 0.85s">
-                <span class="line-number">17</span>
-                <span class="line-content"><span class="property">currentlyLearning</span>: [<span class="string">"React Native"</span>, <span class="string">"Flutter"</span>, <span class="string">"Advanced React"</span>, <span class="string">"Node.js"</span>],</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 0.9s">
-                <span class="line-number">18</span>
-                <span class="line-content"><span class="property">interests</span>: [<span class="string">"Web Development"</span>, <span class="string">"Mobile Development"</span>, <span class="string">"UI/UX"</span>, <span class="string">"Open Source"</span>],</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 0.95s">
-                <span class="line-number">19</span>
-                <span class="line-content"><span class="property">motto</span>: <span class="string">"Go Beyond The Boundaries"</span> 🚀</span>
-            </div>
-
-            <div class="line" style="animation-delay: 1s">
-                <span class="line-number">20</span>
-                <span class="line-content">};</span>
-            </div>
-
-            <div class="line section-divider" style="animation-delay: 1.05s">
-                <span class="line-number">21</span>
-                <span class="line-content"></span>
-            </div>
-
-            <div class="line" style="animation-delay: 1.1s">
-                <span class="line-number">22</span>
-                <span class="line-content"><span class="comment">// 💻 Tech Stack</span></span>
-            </div>
-
-            <div class="line" style="animation-delay: 1.15s">
-                <span class="line-number">23</span>
-                <span class="line-content"></span>
-            </div>
-
-            <div class="line" style="animation-delay: 1.2s">
-                <span class="line-number">24</span>
-                <span class="line-content"><span class="keyword">const</span> <span class="property">techStack</span> = {</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 1.25s">
-                <span class="line-number">25</span>
-                <span class="line-content"><span class="property">frontend</span>: [<span class="string">"HTML5"</span>, <span class="string">"CSS3"</span>, <span class="string">"JavaScript"</span>, <span class="string">"TypeScript"</span>, <span class="string">"React"</span>, <span class="string">"Next.js"</span>, <span class="string">"TailwindCSS"</span>, <span class="string">"Figma"</span>, <span class="string">"Adobe XD"</span>],</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 1.3s">
-                <span class="line-number">26</span>
-                <span class="line-content"><span class="property">backend</span>: [<span class="string">"Node.js"</span>, <span class="string">"Express.js"</span>, <span class="string">"Python"</span>, <span class="string">"PHP"</span>, <span class="string">"Java"</span>],</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 1.35s">
-                <span class="line-number">27</span>
-                <span class="line-content"><span class="property">databases</span>: [<span class="string">"MongoDB"</span>, <span class="string">"MySQL"</span>, <span class="string">"PostgreSQL"</span>, <span class="string">"Firebase"</span>],</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 1.4s">
-                <span class="line-number">28</span>
-                <span class="line-content"><span class="property">mobile</span>: [<span class="string">"React Native"</span>, <span class="string">"Flutter"</span>, <span class="string">"Dart"</span>, <span class="string">"Expo"</span>],</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 1.45s">
-                <span class="line-number">29</span>
-                <span class="line-content"><span class="property">tools</span>: [<span class="string">"Git"</span>, <span class="string">"Docker"</span>, <span class="string">"Vercel"</span>, <span class="string">"Netlify"</span>, <span class="string">"VS Code"</span>, <span class="string">"Postman"</span>]</span>
-            </div>
-
-            <div class="line" style="animation-delay: 1.5s">
-                <span class="line-number">30</span>
-                <span class="line-content">};</span>
-            </div>
-
-            <div class="line section-divider" style="animation-delay: 1.55s">
-                <span class="line-number">31</span>
-                <span class="line-content"></span>
-            </div>
-
-            <div class="line" style="animation-delay: 1.6s">
-                <span class="line-number">32</span>
-                <span class="line-content"><span class="comment">// 🎯 Featured Projects</span></span>
-            </div>
-
-            <div class="line" style="animation-delay: 1.65s">
-                <span class="line-number">33</span>
-                <span class="line-content"></span>
-            </div>
-
-            <div class="line table-header" style="animation-delay: 1.7s">
-                <span class="line-number">34</span>
-                <span class="line-content">
-                    <span style="display: grid; grid-template-columns: 2fr 3fr 2fr 1fr; gap: 20px; width: 100%;">
-                        <span>PROJECT</span>
-                        <span>DESCRIPTION</span>
-                        <span>TECH STACK</span>
-                        <span>STATUS</span>
-                    </span>
-                </span>
-            </div>
-
-            <div class="line table-row" style="animation-delay: 1.75s">
-                <span class="line-number">35</span>
-                <span class="line-content" style="display: grid; grid-template-columns: 2fr 3fr 2fr 1fr; gap: 20px; width: 100%;">
-                    <span><span class="emoji">🛒</span> E-Commerce</span>
-                    <span>Complete shopping platform with admin dashboard</span>
-                    <span>React, Node.js, MongoDB</span>
-                    <span><span class="status-badge status-progress">In Progress</span></span>
-                </span>
-            </div>
-
-            <div class="line table-row" style="animation-delay: 1.8s">
-                <span class="line-number">36</span>
-                <span class="line-content" style="display: grid; grid-template-columns: 2fr 3fr 2fr 1fr; gap: 20px; width: 100%;">
-                    <span><span class="emoji">✅</span> Task Manager</span>
-                    <span>Cross-platform productivity app with sync</span>
-                    <span>React Native, Firebase</span>
-                    <span><span class="status-badge status-active">Active</span></span>
-                </span>
-            </div>
-
-            <div class="line table-row" style="animation-delay: 1.85s">
-                <span class="line-number">37</span>
-                <span class="line-content" style="display: grid; grid-template-columns: 2fr 3fr 2fr 1fr; gap: 20px; width: 100%;">
-                    <span><span class="emoji">🍽️</span> Restaurant App</span>
-                    <span>Full-featured dining platform with ordering</span>
-                    <span>Flutter, Node.js, MySQL</span>
-                    <span><span class="status-badge status-active">Active</span></span>
-                </span>
-            </div>
-
-            <div class="line table-row" style="animation-delay: 1.9s">
-                <span class="line-number">38</span>
-                <span class="line-content" style="display: grid; grid-template-columns: 2fr 3fr 2fr 1fr; gap: 20px; width: 100%;">
-                    <span><span class="emoji">🎨</span> UI/UX Portfolio</span>
-                    <span>Design showcase with interactive prototypes</span>
-                    <span>Figma, Adobe XD, Framer</span>
-                    <span><span class="status-badge status-planning">Planning</span></span>
-                </span>
-            </div>
-
-            <div class="line section-divider" style="animation-delay: 1.95s">
-                <span class="line-number">39</span>
-                <span class="line-content"></span>
-            </div>
-
-            <div class="line" style="animation-delay: 2s">
-                <span class="line-number">40</span>
-                <span class="line-content"><span class="comment">// 🌟 Core Skills</span></span>
-            </div>
-
-            <div class="line" style="animation-delay: 2.05s">
-                <span class="line-number">41</span>
-                <span class="line-content"></span>
-            </div>
-
-            <div class="line" style="animation-delay: 2.1s">
-                <span class="line-number">42</span>
-                <span class="line-content"><span class="keyword">const</span> <span class="property">skills</span> = {</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 2.15s">
-                <span class="line-number">43</span>
-                <span class="line-content"><span class="string">"Web Development"</span>: <span class="string">"Building responsive, scalable applications"</span>,</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 2.2s">
-                <span class="line-number">44</span>
-                <span class="line-content"><span class="string">"Mobile Development"</span>: <span class="string">"Cross-platform experiences for iOS & Android"</span>,</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 2.25s">
-                <span class="line-number">45</span>
-                <span class="line-content"><span class="string">"UI/UX Design"</span>: <span class="string">"Intuitive interfaces that balance aesthetics"</span>,</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 2.3s">
-                <span class="line-number">46</span>
-                <span class="line-content"><span class="string">"Full-Stack Solutions"</span>: <span class="string">"End-to-end development with scalability"</span></span>
-            </div>
-
-            <div class="line" style="animation-delay: 2.35s">
-                <span class="line-number">47</span>
-                <span class="line-content">};</span>
-            </div>
-
-            <div class="line section-divider" style="animation-delay: 2.4s">
-                <span class="line-number">48</span>
-                <span class="line-content"></span>
-            </div>
-
-            <div class="line" style="animation-delay: 2.45s">
-                <span class="line-number">49</span>
-                <span class="line-content"><span class="comment">// 🤝 Let's Connect</span></span>
-            </div>
-
-            <div class="line" style="animation-delay: 2.5s">
-                <span class="line-number">50</span>
-                <span class="line-content"></span>
-            </div>
-
-            <div class="line" style="animation-delay: 2.55s">
-                <span class="line-number">51</span>
-                <span class="line-content"><span class="keyword">const</span> <span class="property">connect</span> = {</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 2.6s">
-                <span class="line-number">52</span>
-                <span class="line-content"><span class="property">linkedin</span>: <span class="string">"https://linkedin.com/in/vihanga-nilusha"</span>,</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 2.65s">
-                <span class="line-number">53</span>
-                <span class="line-content"><span class="property">github</span>: <span class="string">"https://github.com/Vihanga13"</span>,</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 2.7s">
-                <span class="line-number">54</span>
-                <span class="line-content"><span class="property">email</span>: <span class="string">"vihaax23@gmail.com"</span>,</span>
-            </div>
-
-            <div class="line indent" style="animation-delay: 2.75s">
-                <span class="line-number">55</span>
-                <span class="line-content"><span class="property">discord</span>: <span class="string">"https://discord.gg/yourdiscord"</span></span>
-            </div>
-
-            <div class="line" style="animation-delay: 2.8s">
-                <span class="line-number">56</span>
-                <span class="line-content">};</span>
-            </div>
-
-            <div class="line section-divider" style="animation-delay: 2.85s">
-                <span class="line-number">57</span>
-                <span class="line-content"></span>
-            </div>
-
-            <div class="line" style="animation-delay: 2.9s">
-                <span class="line-number">58</span>
-                <span class="line-content"><span class="comment">// ⭐ Don't forget to star my repositories!</span></span>
-            </div>
-
-            <div class="line" style="animation-delay: 2.95s">
-                <span class="line-number">59</span>
-                <span class="line-content"><span class="comment">// Made with ❤️ and ☕ by Vihanga Nilusha</span></span>
-            </div>
-
-            <div class="line" style="animation-delay: 3s">
-                <span class="line-number">60</span>
-                <span class="line-content"><span class="comment">// Go Beyond The Boundaries 🚀</span></span>
-            </div>
-
-        </div>
-    </div>
-</body>
-</html>
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=000000&customColorList=0,1,2,3,4,5&height=180&section=header&text=Hi%20👋%20I'm%20Vihanga%20Nilusha&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=32"/>
+</div>
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=ffffff&center=true&vCenter=true&multiline=true&width=800&height=120&lines=Computer+Science+Student;🚀+Full+Stack+Developer;🎨+UI%2FUX+Designer;📱+Mobile+App+Developer;💡+Go+Beyond+The+Boundaries" alt="Typing Animation"/>
+</div>
+<br></br>
+
+<div align="center">
+  <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="120px" alt="Coding GIF">
+  <br><br>
+  <img src="https://komarev.com/ghpvc/?username=Vihanga13&label=Profile%20Views&color=white&style=for-the-badge&labelColor=black" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/Vihanga13?label=Followers&style=for-the-badge&color=white&labelColor=black" alt="GitHub Followers" />
+</div>
+
+---
+
+<table align="center" style="border: none; background-color: #000000;">
+<tr>
+<td width="50%" valign="top">
+
+## 🌈 About Me
+
+```javascript
+const vihanga = {
+    name: "Vihanga Nilusha",
+    education: "University of Plymouth 🎓",
+    status: "Computer Science Student",
+    specializations: [
+        "Full Stack Development 🚀",
+        "UI/UX Design 🎨", 
+        "Mobile App Development 📱"
+    ],
+    currentlyLearning: [
+        "React Native", 
+        "Flutter", 
+        "Advanced React", 
+        "Node.js"
+    ],
+    interests: [
+        "Web Development", 
+        "Mobile Development", 
+        "UI/UX Design", 
+        "Open Source"
+    ],
+    motto: "Go Beyond The Boundaries 🚀",
+    contact: "vihaax23@gmail.com",
+    funFact: "I create beautiful, functional experiences across all platforms! 💻📱🎨"
+};
+```
+
+### 🎯 Current Focus
+- 🌱 Building **full-stack** web applications
+- 🎨 Creating intuitive **UI/UX** designs
+- 📱 Developing **mobile applications**
+- 🤝 Contributing to open source projects
+- 🚀 Learning cross-platform development
+
+</td>
+<td width="50%" align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400px" alt="Coding Animation">
+  <br><br>
+  <div align="center">
+    <img src="https://img.shields.io/badge/Full_Stack-React%20%7C%20Node.js%20%7C%20MongoDB-white?style=for-the-badge&logo=react&logoColor=black&labelColor=black" alt="Full Stack"/>
+    <br>
+    <img src="https://img.shields.io/badge/UI%2FUX-Figma%20%7C%20Adobe_XD%20%7C%20Design_Systems-white?style=for-the-badge&logo=figma&logoColor=black&labelColor=black" alt="UI/UX"/>
+    <br>
+    <img src="https://img.shields.io/badge/Mobile-React_Native%20%7C%20Flutter%20%7C%20Cross_Platform-white?style=for-the-badge&logo=flutter&logoColor=black&labelColor=black" alt="Mobile"/>
+  </div>
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=💻%20TECH%20STACK%20💻&fontSize=25&fontColor=ffffff"/>
+</div>
+
+<div align="center">
+
+### 🎨 Frontend & UI/UX
+![HTML5](https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-000000?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-000000?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass-000000?style=for-the-badge&logo=sass&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-000000?style=for-the-badge&logo=figma&logoColor=white)
+![Adobe XD](https://img.shields.io/badge/Adobe%20XD-000000?style=for-the-badge&logo=Adobe%20XD&logoColor=white)
+
+### ⚡ Backend & Database
+![Node.js](https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-000000?style=for-the-badge&logo=php&logoColor=white)
+![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-000000?style=for-the-badge&logo=openjdk&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-000000?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-000000?style=for-the-badge&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=postgresql&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-000000?style=for-the-badge&logo=Firebase&logoColor=white)
+
+### 📱 Mobile Development
+![React Native](https://img.shields.io/badge/React_Native-000000?style=for-the-badge&logo=react&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-000000?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-000000?style=for-the-badge&logo=dart&logoColor=white)
+![Android](https://img.shields.io/badge/Android-000000?style=for-the-badge&logo=android&logoColor=white)
+![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
+![Expo](https://img.shields.io/badge/Expo-000000?style=for-the-badge&logo=expo&logoColor=white)
+
+### 🛠️ Tools & DevOps
+![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-000000?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-000000?style=for-the-badge&logo=postman&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-000000?style=for-the-badge&logo=netlify&logoColor=white)
+
+</div>
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=📊%20GITHUB%20ANALYTICS%20📊&fontSize=25&fontColor=ffffff"/>
+</div>
+
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <img src="https://github-readme-stats.vercel.app/api?username=Vihanga13&show_icons=true&theme=dark&hide_border=true&bg_color=000000&title_color=ffffff&icon_color=ffffff&text_color=ffffff" alt="GitHub Stats" width="400"/>
+      </td>
+      <td>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vihanga13&layout=compact&theme=dark&hide_border=true&bg_color=000000&title_color=ffffff&text_color=ffffff&langs_count=8" alt="Top Languages" width="400"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com/?user=Vihanga13&theme=dark&hide_border=true&background=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakLabel=ffffff" alt="GitHub Streak"/>
+</div>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Vihanga13&theme=github-compact&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" alt="Contribution Graph"/>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=🏆%20ACHIEVEMENTS%20🏆&fontSize=25&fontColor=ffffff"/>
+</div>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Vihanga13&theme=onedark&no-frame=true&no-bg=false&margin-w=4&row=2&column=4" alt="GitHub Trophies"/>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=🎯%20CURRENT%20PROJECTS%20🎯&fontSize=25&fontColor=ffffff"/>
+</div>
+
+<div align="center">
+
+| 🚀 Project | 📝 Description | 🛠️ Tech Stack | 📊 Status |
+|------------|----------------|---------------|----------|
+| **Full-Stack E-Commerce** | Complete shopping platform with admin panel | `React` `Node.js` `MongoDB` `Stripe` | ![In Progress](https://img.shields.io/badge/Status-In%20Progress-white?style=flat-square&labelColor=black) |
+| **Mobile Task Manager** | Cross-platform productivity app with sync | `React Native` `Firebase` `Redux` | ![Active](https://img.shields.io/badge/Status-Active-white?style=flat-square&labelColor=black) |
+| **UI/UX Portfolio** | Design showcase with interactive prototypes | `Figma` `Adobe XD` `Framer` | ![Planning](https://img.shields.io/badge/Status-Planning-white?style=flat-square&labelColor=black) |
+| **Restaurant App** | Full-stack dining experience with ordering | `Flutter` `Node.js` `MySQL` `PayPal` | ![Active](https://img.shields.io/badge/Status-Active-white?style=flat-square&labelColor=black) |
+
+</div>
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=🤝%20LET'S%20CONNECT%20🤝&fontSize=25&fontColor=ffffff"/>
+</div>
+
+<div align="center">
+  <a href="https://www.linkedin.com/in/vihanga-nilusha" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:vihaax23@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/Vihanga13" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://discord.gg/yourdiscord" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-000000?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/>
+  </a>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=💡%20RANDOM%20DEV%20QUOTE%20💡&fontSize=25&fontColor=ffffff"/>
+</div>
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&border=true&bg_color=000000&text_color=ffffff" alt="Random Dev Quote"/>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&customColorList=0,1,2,3,4,5&height=40&section=header&text=⚡%20CONTRIBUTION%20METRICS%20⚡&fontSize=25&fontColor=ffffff"/>
+</div>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Vihanga13&theme=github_dark" alt="Contribution Details" width="600"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Vihanga13&theme=github_dark" alt="Repos per Language" width="300"/>
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Vihanga13&theme=github_dark" alt="Most Commit Language" width="300"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Vihanga13&theme=github_dark" alt="Stats" width="300"/>
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Vihanga13&theme=github_dark&utcOffset=5.5" alt="Productive Time" width="300"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="center">
+  <h3 style="color: white;">🔥 Code & Commit Heatmap 🔥</h3>
+  <img src="https://ghchart.rshah.org/ffffff/Vihanga13" alt="GitHub Contribution Chart" width="800"/>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=000000&customColorList=0,1,2,3,4,5&height=120&section=footer&text=Thank%20You%20For%20Visiting!&fontSize=24&fontColor=ffffff&animation=twinkling&fontAlignY=75"/>
+</div>
+
+<div align="center">
+  <h3 style="color: white;">⭐ Don't forget to star my repositories if you find them interesting! ⭐</h3>
+  <br>
+  <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="Built with Love">
+  <img src="https://forthebadge.com/images/badges/powered-by-coffee.svg" alt="Powered by Coffee">
+</div>
