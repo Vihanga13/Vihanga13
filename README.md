@@ -133,21 +133,21 @@ const vihanga = {
   <table>
     <tr>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Vihanga13&show_icons=true&theme=dark&hide_border=true&bg_color=000000&title_color=ffffff&icon_color=ffffff&text_color=ffffff" alt="GitHub Stats" width="400"/>
+        <img src="https://github-readme-stats.vercel.app/api?username=Vihanga13&show_icons=true&theme=tokyonight&hide_border=true&bg_color=000000&title_color=ffffff&icon_color=ffffff&text_color=ffffff&border_radius=10" alt="GitHub Stats" width="400"/>
       </td>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vihanga13&layout=compact&theme=dark&hide_border=true&bg_color=000000&title_color=ffffff&text_color=ffffff&langs_count=8" alt="Top Languages" width="400"/>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vihanga13&layout=compact&theme=tokyonight&hide_border=true&bg_color=000000&title_color=ffffff&text_color=ffffff&langs_count=8&border_radius=10" alt="Top Languages" width="400"/>
       </td>
     </tr>
   </table>
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=Vihanga13&theme=dark&hide_border=true&background=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakLabel=ffffff" alt="GitHub Streak"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Vihanga13&theme=dark&hide_border=true&background=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&border_radius=10" alt="GitHub Streak"/>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Vihanga13&theme=github-compact&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" alt="Contribution Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Vihanga13&theme=high-contrast&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true&border_radius=10" alt="Contribution Graph"/>
 </div>
 
 ---
