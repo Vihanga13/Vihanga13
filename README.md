@@ -143,7 +143,7 @@ const vihanga = {
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=Vihanga13&theme=dark&hide_border=true&background=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakNum=ffffff&currStreakLabel=ffffff&sideNums=ffffff&sideLabels=ffffff" alt="GitHub Streak" height="180"/>
+  <img src="https://nirzak-streak-stats.vercel.app/?user=Vihanga13&theme=dark&hide_border=true&background=000000&stroke=FFFFFF&ring=FFFFFF&fire=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=FFFFFF&sideLabels=FFFFFF&dates=FFFFFF" alt="GitHub Streak" height="180"/>
 </div>
 
 <div align="center">
