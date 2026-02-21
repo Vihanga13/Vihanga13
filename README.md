@@ -133,17 +133,17 @@ const vihanga = {
   <table>
     <tr>
       <td>
-        <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Vihanga13&show_icons=true&count_private=true&hide_border=true&bg_color=000000&title_color=ffffff&icon_color=ffffff&text_color=ffffff" alt="GitHub Stats" height="180"/>
+        <img src="https://github-readme-stats.vercel.app/api?username=Vihanga13&show_icons=true&count_private=true&hide_border=true&bg_color=000000&title_color=ffffff&icon_color=ffffff&text_color=ffffff&cache_seconds=1800&include_all_commits=true" alt="GitHub Stats" height="180"/>
       </td>
       <td>
-        <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Vihanga13&layout=compact&hide_border=true&bg_color=000000&title_color=ffffff&text_color=ffffff&langs_count=8" alt="Top Languages" height="180"/>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vihanga13&layout=compact&hide_border=true&bg_color=000000&title_color=ffffff&text_color=ffffff&langs_count=8&cache_seconds=1800" alt="Top Languages" height="180"/>
       </td>
     </tr>
   </table>
 </div>
 
 <div align="center">
-  <img src="https://nirzak-streak-stats.vercel.app/?user=Vihanga13&theme=dark&hide_border=true&background=000000&stroke=FFFFFF&ring=FFFFFF&fire=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=FFFFFF&sideLabels=FFFFFF&dates=FFFFFF" alt="GitHub Streak" height="180"/>
+  <img src="https://streak-stats.demolab.com/?user=Vihanga13&theme=dark&hide_border=true&background=000000&stroke=FFFFFF&ring=FFFFFF&fire=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=FFFFFF&sideLabels=FFFFFF&dates=FFFFFF" alt="GitHub Streak" height="180"/>
 </div>
 
 <div align="center">
